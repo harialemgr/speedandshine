@@ -16,6 +16,7 @@
                       
                     </li>                  
                     <li class="nav-item"><a href="{{route('car.index')}}" class="nav-link"><i class="nav-icon fa fa-th"></i><p>Cars Collection {{-- <span class="right badge badge-danger">New</span>--}}</p></a></li>
+                    <li class="nav-item"><a href="{{route('service.index')}}" class="nav-link"><i class="nav-icon fa fa-th"></i><p>Service{{-- <span class="right badge badge-danger">New</span>--}}</p></a></li>
                   
                 </ul>
             </nav>

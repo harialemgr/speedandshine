@@ -11,7 +11,7 @@
     text-transform:uppercase;
 }
 </style>
-<div class="flex-container1">
+<div class="flex-container1" style="text-align:center">
 
   <span id="flex-item1">
 
