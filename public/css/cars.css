@@ -8,7 +8,8 @@ text-transform: capitalize;
 p#car_description{
   letter-spacing:0.1em;
   line-height:1.5em;
-  
+  font-weight:100;
+  font-size:3em;
 }
 @media (max-width: 30em) {
     .row {

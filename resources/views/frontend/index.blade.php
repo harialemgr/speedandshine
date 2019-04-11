@@ -33,11 +33,13 @@
       <h1 id="heading2">our <span id="hd">services</span></h1>
     </div>
     <div class="row" style="padding:0;margin:0.1em;">      
-      <div class="col-sm-6">
-        <img src="{{asset('storage/car/black.jpg')}}" width="100%" height="90%">
-        <p>Software Development</p>
-      </div>
-      <div class="col-sm-6">
+      @foreach ($services as $service)
+        <div class="col-sm-6">
+          <img src="{{asset('storage/service/'.$service->image)}}" width="100%" height="90%">
+          <p>{{$service->name}}</p>
+        </div>
+      @endforeach
+      {{-- <div class="col-sm-6">
         <img src="{{asset('storage/car/black.jpg')}}" width="100%" height="90%">
         <p>Software Development</p>
       </div>
@@ -48,7 +50,7 @@
       <div class="col-sm-6">
         <img src="{{asset('storage/car/black.jpg')}}" width="100%" height="90%">
         <p>Software Development</p>
-      </div>
+      </div> --}}
     </div>
   </div>
 </div>

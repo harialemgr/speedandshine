@@ -15,17 +15,16 @@ Auth::routes();
 
 Route::get('/','HomeController@index');
 Route::get('home','HomeController@index')->name('home');
-
 Route::group(['middleware'=>'auth:web'],function(){
     Route::get('dashboard',function(){ 
         return view('admin.dashboard');
     })->name('dashboard');
-    
 Route::resources([
     'adminprofile'=>'ProfilesController',
     'car'=>'CarsController',
     'wallpaper'=>'WallpapersController',
     'footersetting'=>'FooterSettingController',
+    'service'=>'ServicesController',
     ]);
 });
 Route::get('cars','FrontendController@Cars')->name('cars');

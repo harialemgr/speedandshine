@@ -98,35 +98,35 @@
               {{ $footer->facebook }}
             @else
               www.facebook.com
-            @endif ">
+            @endif " target="_blank">
           </a>
           <a class="fab fa-twitter" style="text-decoration: none;" href="
             @if(isset($footer->twitter))
               {{ $footer->twitter }}
             @else
               www.twitter.com
-            @endif ">
+            @endif "  target="_blank">
           </a>
           <a class="fab fa-google-plus" style="text-decoration: none;" href="
             @if(isset($footer->gmail))
               {{ $footer->gmail }}
             @else
               no address
-            @endif ">
+            @endif "  target="_blank">
           </a>
           <a class="fab fa-linkedin" style="text-decoration: none;" href="
             @if(isset($footer->linkin))
               {{ $footer->linkin }}      
             @else
               no address     
-            @endif ">
+            @endif " target="_blank">
           </a>
           <a class="fab fa-instagram" style="text-decoration: none;" href="
             @if(isset($footer->instagram))
               {{ $footer->instagram }}
             @else
               no address
-            @endif ">
+            @endif "  target="_blank">
           </a>
         </div>
       </div>
