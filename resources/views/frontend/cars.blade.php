@@ -1,8 +1,8 @@
 @extends('frontend.master')
 @section('main-content')
-<div class="container-fluid" style="background-color:black;padding-top:50px;color:white;" id="car_collection">
-    <div class="row"> 
-        <section class="banner-bottom-wthree py-5 px-4">
+<div class="container-fluid" id="car_collection">
+    <div class="row" style="magrin:0;padding:0;"> 
+        <section class="banner-bottom-wthree py-5 px-4" id="z">
             @php $cnt=0; @endphp
                 @foreach($cars1 as $car)
                     <div class="row banner-grids">
