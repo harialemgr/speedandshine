@@ -27,7 +27,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
       </button>
-      <img src="{{asset('storage/logo/logo.jpg')}}" height="70px" style="margin-left:25px">
+      <a href="{{route('home')}}"><img src="{{asset('storage/logo/logo.jpg')}}" height="70px" style="margin-left:25px"></a>
       <a class="navbar-brand" href="{{route('home')}}" id="l"> </a>
     </span>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
