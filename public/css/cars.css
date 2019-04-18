@@ -1,11 +1,11 @@
+
 #car_collection{
   background-image:url('/storage/car/background.jpg');
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-size: cover;
-  padding-top:15px;
   color:white;
-}
+  }
 #z{
   margin:0;
   padding:0;

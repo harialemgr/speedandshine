@@ -47,6 +47,7 @@ class ServicesController extends Controller
 
         $services = new Service();
         $services->name = $request->name;
+        $services->text = $request->text;
         if($request->hasFile('image')){
         $services->image= $fileNameToStore;
         }
@@ -103,6 +104,8 @@ class ServicesController extends Controller
 
         $service = Service::find($id);
         $service->name = $request->name;
+        
+        $service->text = $request->text;
         // if($request->hasFile('image')){
         // $cars->image= $fileNameToStore;
         // }

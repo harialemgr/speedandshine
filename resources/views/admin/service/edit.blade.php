@@ -19,6 +19,10 @@
                             <label for="name">Name</label>
                             <input name="name" type="text" placeholder="Enter Service Name" class="form-control" id="name" value="{{$service->name}}"> 
                         </div>
+                         <div class="form-group col-md-6">
+                            <label for="name">Text</label>
+                            <textarea name="text" placeholder="Enter Detail" class="form-control" value="{{ $service->text }}" id="c-ckeditor"></textarea>
+                        </div>
                         <div>
                             <img src="{{asset('storage/service/'.$service->image)}}" alt="current picture" height="250px">
                         </div>
@@ -60,6 +64,9 @@
         @elseif(session('warningMsg'))
             toast({ type: 'success', title: `{{ session('warningMsg') }}` })
         @endif
-    </script>
+</script>
+<script>
+    CKEDITOR.replace('c-ckeditor');
+</script>
 @endsection
 

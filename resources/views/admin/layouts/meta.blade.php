@@ -54,7 +54,10 @@ a.column{
     <script src="{{asset('plugins/datatables/dataTables.bootstrap4.js')}}"></script>
     <script src="{{asset('plugins/slimScroll/jquery.slimscroll.min.js')}}"></script>
     <script src="{{asset('plugins/fastclick/fastclick.js')}}"></script>
-    <script src="{{asset('plugins/ckeditor/ckeditor.js')}}"> </script>
+    {{-- <script src="{{asset('plugins/ckeditor/ckeditor.js')}}"> </script> --}}
+       <script src="{{asset('vendor/unisharp/laravel-ckeditor/ckeditor.js')}}"></script>
+    
+
 
     {{-- sweet alert 2 --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.32.4/sweetalert2.all.js"></script>

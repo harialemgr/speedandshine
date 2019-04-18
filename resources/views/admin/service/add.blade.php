@@ -18,6 +18,10 @@
                             <label for="name">Name</label>
                             <input name="name" type="text" placeholder="Enter Service Name" class="form-control" id="name" required>
                         </div>
+                         <div class="form-group col-md-6">
+                            <label for="name">Text</label>
+                            <textarea name="text" placeholder="Enter Detail" class="form-control" id="c-ckeditor"></textarea>
+                        </div>
                         <div class="form-group col-md-6">
                             <label>Picture</label>
                             <div class="input-group">
@@ -36,6 +40,7 @@
             </div>
         </section>
     </div>
+    
 <script>
     
     
@@ -53,6 +58,10 @@
     @elseif(session('warningMsg'))
         toast({ type: 'success', title: `{{ session('warningMsg') }}` })
     @endif
+</script>
+
+ <script>
+        CKEDITOR.replace( 'c-ckeditor' );
 </script>
 @endsection
 

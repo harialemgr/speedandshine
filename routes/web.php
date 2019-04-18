@@ -28,3 +28,4 @@ Route::resources([
     ]);
 });
 Route::get('cars','FrontendController@Cars')->name('cars');
+Route::get('services','FrontendController@services')->name('services');
