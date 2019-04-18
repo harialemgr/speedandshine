@@ -33,16 +33,13 @@
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/owljquery.js') }}"></script>
 <script src="{{ asset('js/parallax.min.js') }}"></script>
-
-    
-
-
 <style>
 *{
     margin:0;
 }
 body{
   font: 200 16px/1 Helvetica, Arial, sans-serif;
+  background-color:black; 
 }
 #overlay{
   position:fixed;

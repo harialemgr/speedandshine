@@ -39,8 +39,8 @@
     <div class="row" style="padding:0;margin:0.1em;">      
       @foreach ($services as $service)
         <div class="col-sm-6 service">
-          <img src="{{asset('storage/service/'.$service->image)}}" width="100%" height="90%">
-          <p>{{$service->name}}</p>
+          <a href="{{route('services')}}"><img src="{{asset('storage/service/'.$service->image)}}" width="100%" height="90%">
+          <p>{{$service->name}}</p></a>
         </div>
       @endforeach
     </div>

@@ -56,7 +56,7 @@
 {{-- @include('inc.footer') --}}
 {{-- footer starts --}}
 @section('footer')
-<div class="container-fluid" style="background-color:black; padding-top:30px; padding-bottom:100px;" id="contact">
+<div class="container-fluid" style="background-color:black; padding-bottom:100px;" id="contact">
   <div class="footer_heading">
     <h1>speed & shine autozone pvt.ltd.</h1>
   </div>
